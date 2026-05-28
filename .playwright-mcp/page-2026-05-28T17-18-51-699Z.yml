@@ -1,0 +1,54 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - button "Open menu" [ref=e5]:
+          - img [ref=e6]
+        - link "Internshala" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "Internshala" [ref=e9]
+      - generic [ref=e10]:
+        - button "Toggle dark mode" [ref=e11]:
+          - img [ref=e12]
+        - link "Register" [ref=e14] [cursor=pointer]:
+          - /url: "#"
+  - main [ref=e15]:
+    - navigation [ref=e16]:
+      - link "Home" [ref=e17] [cursor=pointer]:
+        - /url: "#"
+      - text: ›Internships
+    - generic [ref=e18]:
+      - heading "Loading internships…" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Latest internships for you
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: Showing
+          - generic [ref=e26]: "0"
+        - generic [ref=e27]:
+          - generic [ref=e28]: Avg stipend
+          - generic [ref=e29]: —
+        - generic [ref=e30]:
+          - generic [ref=e31]: Work from home
+          - generic [ref=e32]: 0%
+        - generic [ref=e33]:
+          - generic [ref=e34]: Saved
+          - generic [ref=e35]: "0"
+      - generic [ref=e37]:
+        - combobox "Sort by" [ref=e38]:
+          - option "Newest" [selected]
+          - 'option "Stipend: high → low"'
+          - 'option "Duration: short → long"'
+          - option "Company A → Z"
+        - button "Filters" [ref=e39]:
+          - img [ref=e40]
+          - text: Filters
+      - list [ref=e42]:
+        - listitem [ref=e43]
+        - listitem [ref=e58]
+        - listitem [ref=e73]
+        - listitem [ref=e88]
+        - listitem [ref=e103]
+  - contentinfo [ref=e118]: Unofficial replica of internshala.com/internships built with Next.js · UI practice project · data live from Internshala
+  - button "Open Next.js Dev Tools" [ref=e124] [cursor=pointer]:
+    - img [ref=e125]

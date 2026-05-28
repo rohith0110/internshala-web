@@ -1,0 +1,129 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Internshala" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Internshala" [ref=e6]
+      - navigation [ref=e7]:
+        - button "Internships" [ref=e9]:
+          - text: Internships
+          - img [ref=e10]
+        - button "Courses OFFER" [ref=e13]:
+          - text: Courses
+          - generic [ref=e14]: OFFER
+          - img [ref=e15]
+        - button "Jobs" [ref=e18]:
+          - text: Jobs
+          - img [ref=e19]
+      - generic [ref=e21]:
+        - button "Toggle dark mode" [ref=e22]:
+          - img [ref=e23]
+        - link "Login" [ref=e25] [cursor=pointer]:
+          - /url: "#"
+        - link "Register" [ref=e26] [cursor=pointer]:
+          - /url: "#"
+  - main [ref=e27]:
+    - navigation [ref=e28]:
+      - link "Home" [ref=e29] [cursor=pointer]:
+        - /url: "#"
+      - text: ›Internships
+    - generic [ref=e30]:
+      - heading "Loading internships…" [level=1] [ref=e31]
+      - paragraph [ref=e32]: Latest internships (loading more as you scroll)
+    - generic [ref=e33]:
+      - complementary [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - text: Filters
+            - generic [ref=e40]:
+              - generic [ref=e41] [cursor=pointer]:
+                - checkbox "As per my preferences" [ref=e42]
+                - generic [ref=e44]:
+                  - text: As per my
+                  - link "preferences" [ref=e45]:
+                    - /url: "#"
+              - generic [ref=e46]:
+                - text: Profile
+                - textbox "e.g. Marketing" [ref=e48]
+              - generic [ref=e49]:
+                - text: Location
+                - textbox "e.g. Delhi" [ref=e51]
+              - generic [ref=e52]:
+                - generic [ref=e53] [cursor=pointer]:
+                  - checkbox "Internships in my city" [ref=e54]
+                  - generic [ref=e55]: Internships in my city
+                - generic [ref=e56] [cursor=pointer]:
+                  - checkbox "Work from home" [ref=e57]
+                  - generic [ref=e58]: Work from home
+                - generic [ref=e59] [cursor=pointer]:
+                  - checkbox "Part-time" [ref=e60]
+                  - generic [ref=e61]: Part-time
+                - generic [ref=e62] [cursor=pointer]:
+                  - checkbox "Saved only (0)" [ref=e63]
+                  - generic [ref=e65]:
+                    - img [ref=e66]
+                    - text: Saved only
+                    - generic [ref=e68]: (0)
+              - generic [ref=e69]:
+                - text: Desired monthly stipend (₹)
+                - generic [ref=e70]:
+                  - generic [ref=e71]:
+                    - generic [ref=e72]:
+                      - text: Min
+                      - generic [ref=e73]: ₹0
+                    - generic [ref=e74]: Max ₹10,000+
+                  - generic [ref=e75]:
+                    - slider "Minimum stipend": "0"
+                    - slider "Maximum stipend": "10000"
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: "0"
+                    - generic [ref=e80]: 2K
+                    - generic [ref=e81]: 4K
+                    - generic [ref=e82]: 6K
+                    - generic [ref=e83]: 8K
+                    - generic [ref=e84]: 10K
+              - generic [ref=e85]:
+                - text: Duration
+                - generic [ref=e86]:
+                  - button "≤ 1 month" [ref=e87]
+                  - button "≤ 2 months" [ref=e88]
+                  - button "≤ 3 months" [ref=e89]
+                  - button "≤ 4 months" [ref=e90]
+                  - button "≤ 6 months" [ref=e91]
+              - button "Clear all filters" [ref=e92]
+          - generic [ref=e93]:
+            - generic [ref=e94]: Keyword Search
+            - textbox "e.g. Design, Mumbai, Infosys" [ref=e95]
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: Showing
+            - generic [ref=e100]: "0"
+          - generic [ref=e101]:
+            - generic [ref=e102]: Avg stipend
+            - generic [ref=e103]: —
+          - generic [ref=e104]:
+            - generic [ref=e105]: Work from home
+            - generic [ref=e106]: 0%
+          - generic [ref=e107]:
+            - generic [ref=e108]: Saved
+            - generic [ref=e109]: "0"
+        - generic [ref=e111]:
+          - generic [ref=e112]: "Sort:"
+          - combobox "Sort by" [ref=e113]:
+            - option "Newest" [selected]
+            - 'option "Stipend: high → low"'
+            - 'option "Duration: short → long"'
+            - option "Company A → Z"
+        - list [ref=e114]:
+          - listitem [ref=e115]
+          - listitem [ref=e130]
+          - listitem [ref=e145]
+          - listitem [ref=e160]
+          - listitem [ref=e175]
+  - contentinfo [ref=e190]: Unofficial replica of internshala.com/internships built with Next.js · UI practice project · data live from Internshala
+  - button "Open Next.js Dev Tools" [ref=e196] [cursor=pointer]:
+    - img [ref=e197]
+  - alert [ref=e200]

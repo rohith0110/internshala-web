@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f8fb;
+  --surface: #ffffff;
+  --foreground: #1f2937;
+  --muted: #6b7280;
+  --border: #e6e8ec;
+  --brand: #008bdc;
+  --brand-strong: #007fcc;
+  --brand-soft: #e6f4fc;
+  --accent: #00a96b;
+  --accent-soft: #e3f7ee;
+  --warn: #f59e0b;
+  --pill-bg: #f1f3f6;
+}
+
+.dark {
+  --background: #0a1018;
+  --surface: #141c2b;
+  --foreground: #f1f5f9;
+  --muted: #a1adc1;
+  --border: #2a3650;
+  --brand: #2196dc;
+  --brand-strong: #45a8e3;
+  --brand-soft: #14304a;
+  --accent: #2bb38f;
+  --accent-soft: #0f3a2d;
+  --warn: #fbbf24;
+  --pill-bg: #1d2940;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-warn: var(--warn);
+  --color-pill: var(--pill-bg);
+  --font-sans: var(--font-geist-sans);
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  pointer-events: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: auto;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: var(--brand);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  pointer-events: auto;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: var(--brand);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  cursor: pointer;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, var(--pill-bg) 0%, var(--border) 50%, var(--pill-bg) 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
