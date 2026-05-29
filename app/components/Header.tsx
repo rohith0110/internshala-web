@@ -13,6 +13,7 @@ import {
 
 type MenuSection = {
   heading: string;
+  headingTag?: string;
   links: { label: string; href: string; tag?: string }[];
 };
 
@@ -27,19 +28,28 @@ const INTERNSHIPS_MENU: MenuSection[] = [
       { label: "Internship in Mumbai", href: "https://internshala.com/internships/internship-in-mumbai/" },
       { label: "Internship in Chennai", href: "https://internshala.com/internships/internship-in-chennai/" },
       { label: "Internship in Pune", href: "https://internshala.com/internships/internship-in-pune/" },
+      { label: "Internship in Kolkata", href: "https://internshala.com/internships/internship-in-kolkata/" },
+      { label: "Internship in Jaipur", href: "https://internshala.com/internships/internship-in-jaipur/" },
       { label: "International Internship", href: "https://internshala.com/internships/international-internship/" },
+      { label: "View all internships", href: "https://internshala.com/internships/" },
     ],
   },
   {
     heading: "Profile",
     links: [
-      { label: "Computer Science", href: "https://internshala.com/internships/computer-science-internship/" },
-      { label: "Marketing", href: "https://internshala.com/internships/marketing-internship/" },
-      { label: "Finance", href: "https://internshala.com/internships/finance-internship/" },
-      { label: "Graphic Design", href: "https://internshala.com/internships/graphic-design-internship/" },
-      { label: "HR", href: "https://internshala.com/internships/hr-internship/" },
-      { label: "Digital Marketing", href: "https://internshala.com/internships/digital-marketing-internship/" },
-      { label: "Content Writing", href: "https://internshala.com/internships/content-writing-internship/" },
+      { label: "Computer Science Internship", href: "https://internshala.com/internships/computer-science-internship/" },
+      { label: "Marketing Internship", href: "https://internshala.com/internships/marketing-internship/" },
+      { label: "Finance Internship", href: "https://internshala.com/internships/finance-internship/" },
+      { label: "Graphic Design Internship", href: "https://internshala.com/internships/graphic-design-internship/" },
+      { label: "Architecture Internship", href: "https://internshala.com/internships/architecture-internship/" },
+      { label: "Mechanical Internship", href: "https://internshala.com/internships/mechanical-internship/" },
+      { label: "HR Internship", href: "https://internshala.com/internships/hr-internship/" },
+      { label: "Digital Marketing Internship", href: "https://internshala.com/internships/digital-marketing-internship/" },
+      { label: "Law Internship", href: "https://internshala.com/internships/law-internship/" },
+      { label: "Electronics Internship", href: "https://internshala.com/internships/electronics-internship/" },
+      { label: "Content Writing Internship", href: "https://internshala.com/internships/content-writing-internship/" },
+      { label: "Civil Internship", href: "https://internshala.com/internships/civil-internship/" },
+      { label: "View all internships", href: "https://internshala.com/internships/" },
     ],
   },
   {
@@ -52,6 +62,27 @@ const INTERNSHIPS_MENU: MenuSection[] = [
       { label: "With Job Offer", href: "https://internshala.com/internships/ppo-true/" },
       { label: "Part-Time", href: "https://internshala.com/internships/part-time-jobs/" },
       { label: "For Women", href: "https://internshala.com/internships-for-women/" },
+      { label: "View all internships", href: "https://internshala.com/internships/" },
+    ],
+  },
+  {
+    heading: "Explore More Internships",
+    links: [
+      { label: "Internships by Stream", href: "https://internshala.com/internships/" },
+      { label: "Internships by Location", href: "https://internshala.com/internships/" },
+      { label: "Internship for Women", href: "https://internshala.com/internships-for-women/" },
+      { label: "Campaign Internships", href: "https://internshala.com/internships/" },
+      { label: "View all internships", href: "https://internshala.com/internships/" },
+    ],
+  },
+  {
+    heading: "Career Launchpads",
+    headingTag: "Get hired faster",
+    links: [
+      { label: "Web Development", href: "https://trainings.internshala.com/web-developer-launchpad/" },
+      { label: "Data Science", href: "https://trainings.internshala.com/data-science-launchpad/" },
+      { label: "Digital Marketing", href: "https://trainings.internshala.com/digital-marketing-launchpad/" },
+      { label: "HR Management", href: "https://trainings.internshala.com/human-resource-management-launchpad/" },
     ],
   },
 ];
@@ -71,6 +102,7 @@ const COURSES_MENU: MenuSection[] = [
   },
   {
     heading: "Career Launchpads",
+    headingTag: "Get hired faster",
     links: [
       { label: "Web Development", href: "https://trainings.internshala.com/web-developer-launchpad/" },
       { label: "Data Science", href: "https://trainings.internshala.com/data-science-launchpad/" },
@@ -100,6 +132,22 @@ const JOBS_MENU: MenuSection[] = [
       { label: "Mumbai", href: "https://internshala.com/jobs/jobs-in-mumbai/" },
       { label: "Pune", href: "https://internshala.com/jobs/jobs-in-pune/" },
       { label: "Chennai", href: "https://internshala.com/jobs/jobs-in-chennai/" },
+      { label: "Kolkata", href: "https://internshala.com/jobs/jobs-in-kolkata/" },
+      { label: "Jaipur", href: "https://internshala.com/jobs/jobs-in-jaipur/" },
+      { label: "View all jobs", href: "https://internshala.com/jobs/" },
+    ],
+  },
+  {
+    heading: "Profile",
+    links: [
+      { label: "Computer Science Job", href: "https://internshala.com/jobs/computer-science-jobs/" },
+      { label: "Marketing Job", href: "https://internshala.com/jobs/marketing-jobs/" },
+      { label: "Finance Job", href: "https://internshala.com/jobs/finance-jobs/" },
+      { label: "Graphic Design Job", href: "https://internshala.com/jobs/graphic-design-jobs/" },
+      { label: "HR Job", href: "https://internshala.com/jobs/hr-jobs/" },
+      { label: "Digital Marketing Job", href: "https://internshala.com/jobs/digital-marketing-jobs/" },
+      { label: "Content Writing Job", href: "https://internshala.com/jobs/content-writing-jobs/" },
+      { label: "View all jobs", href: "https://internshala.com/jobs/" },
     ],
   },
   {
@@ -112,6 +160,7 @@ const JOBS_MENU: MenuSection[] = [
       { label: "HR Jobs", href: "https://internshala.com/jobs/hr-jobs/" },
       { label: "MBA Jobs", href: "https://internshala.com/jobs/mba-jobs/" },
       { label: "Part Time", href: "https://internshala.com/jobs/part-time-jobs/" },
+      { label: "View all jobs", href: "https://internshala.com/jobs/" },
     ],
   },
   {
@@ -138,6 +187,7 @@ function NavDropdown({
   badge?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const [activeSectionIdx, setActiveSectionIdx] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -150,6 +200,12 @@ function NavDropdown({
     timer.current = setTimeout(() => setOpen(false), 120);
   }
 
+  useEffect(() => {
+    if (!open) {
+      setActiveSectionIdx(0);
+    }
+  }, [open]);
+
   return (
     <div
       ref={ref}
@@ -160,11 +216,10 @@ function NavDropdown({
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className={`inline-flex items-center gap-1 px-3 py-2 text-sm font-medium transition ${
-          active
-            ? "text-brand border-b-2 border-brand"
-            : "text-foreground/85 hover:text-brand"
-        }`}
+        className={`inline-flex items-center gap-1 px-3 py-2 text-sm font-medium transition ${active || open
+          ? "text-brand"
+          : "text-foreground/85 hover:text-brand"
+          }`}
         aria-expanded={open}
       >
         {label}
@@ -178,37 +233,55 @@ function NavDropdown({
 
       {open && (
         <div
-          className="absolute left-1/2 top-full z-40 mt-1 w-[min(720px,90vw)] -translate-x-1/2 rounded-xl border border-border bg-surface p-4 shadow-2xl"
+          className="absolute left-1/2 top-full z-40 mt-1.5 flex h-[420px] w-[580px] -translate-x-1/2 rounded-xl border border-border bg-surface shadow-2xl overflow-hidden"
           onMouseEnter={openSoon}
           onMouseLeave={closeSoon}
         >
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-            {sections.map((sec) => (
-              <div key={sec.heading}>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
-                  {sec.heading}
-                </p>
-                <ul className="space-y-1.5">
-                  {sec.links.map((l) => (
-                    <li key={l.href}>
-                      <a
-                        href={l.href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 text-sm text-foreground/80 hover:text-brand"
-                      >
-                        {l.label}
-                        {l.tag && (
-                          <span className="rounded-full bg-brand-soft px-1.5 py-0.5 text-[9px] font-semibold text-brand">
-                            {l.tag}
-                          </span>
-                        )}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          {/* Left Column - Sidebar */}
+          <div className="w-[230px] flex-shrink-0 bg-surface border-r border-border p-2 flex flex-col gap-0.5 overflow-y-auto no-scrollbar">
+            {sections.map((sec, idx) => {
+              const isActive = idx === activeSectionIdx;
+              return (
+                <div
+                  key={sec.heading}
+                  onMouseEnter={() => setActiveSectionIdx(idx)}
+                  className={`flex items-center justify-between px-3 py-2.5 rounded-lg cursor-pointer transition-colors text-[13px] font-semibold tracking-wide ${isActive
+                    ? "bg-brand-soft text-brand"
+                    : "text-foreground/80 hover:bg-pill hover:text-brand"
+                    }`}
+                >
+                  <span className="truncate">{sec.heading}</span>
+                  {sec.headingTag && (
+                    <span className="ml-1 rounded bg-warn px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wider text-white">
+                      {sec.headingTag}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Right Column - Links */}
+          <div className="flex-grow p-4 overflow-y-auto no-scrollbar bg-surface">
+            <ul className="flex flex-col gap-1">
+              {sections[activeSectionIdx]?.links.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-md text-[13.5px] text-foreground/85 hover:bg-pill hover:text-brand transition-colors font-medium"
+                  >
+                    <span className="truncate">{l.label}</span>
+                    {l.tag && (
+                      <span className="rounded-full bg-brand-soft px-1.5 py-0.5 text-[9px] font-semibold text-brand">
+                        {l.tag}
+                      </span>
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
@@ -327,7 +400,7 @@ export function Header() {
     document.documentElement.classList.toggle("dark", next);
     try {
       localStorage.setItem("theme", next ? "dark" : "light");
-    } catch {}
+    } catch { }
   }
 
   return (
@@ -362,9 +435,9 @@ export function Header() {
             type="button"
             onClick={toggleDark}
             aria-label="Toggle dark mode"
-            className="grid h-9 w-9 place-items-center rounded-full border border-border text-foreground/70 transition hover:text-brand"
+            className="grid h-9 w-9 place-items-center rounded-full border-3 border-border text-foreground/70 transition hover:text-brand"
           >
-            {dark ? <SunIcon size={16} /> : <MoonIcon size={16} />}
+            {dark ? <SunIcon size={20} /> : <MoonIcon size={20} />}
           </button>
           <a
             href="#"
